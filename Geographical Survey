@@ -1,0 +1,164 @@
+<main>
+  
+  <h1 id="title">Geographical Survey</h1>
+  <P id="description"> Thank you for taking the time to help us make this study possible </P>
+<div id="survey-box">
+  <form id="survey-form" class="form-text">
+    <label id="name-label">Name </label><br>
+    
+    <input id="name" type="text" placeholder="Enter your name" required><br>
+    <label id="email-label">Email </label><br>
+    <input id="email" type="email" placeholder="Enter your Email" required><br>
+    <Label id="number-label">Random Number </label><br>
+    <input id="number" type="number" placeholder="Enter a number smaller than 10" min="0" max="10" required><br>
+    <label> Geographical Area</label><br>
+    <select id="dropdown">
+      <option value="coast">Coast</option>
+      <option value="mountains">Mountains</option>
+      <option value="plains">Plains</option>
+      <option value="others">Others</option>
+    </select><br>
+    <label class="dots">In what type of area do you live in?<br>
+        <input
+          name="user-area"
+          value="urban"
+          type="radio"
+          class="input-urban"
+          checked
+        />Urban</label><br>
+      <label class="dots">
+        <input
+          name="user-area"
+          value="rural"
+          type="radio"
+          class="input-radio"
+        />Rural</label><br>
+    <label> What do you like the most of where you live?<br>
+        <input
+               type="checkbox"
+               value="people">
+      The People</label><br>
+    <label class="checkboxes">
+        <input
+               type="checkbox"
+               value="feeling">
+      The Feeling</label><br>
+    <label class="checkboxes">
+        <input
+               type="checkbox"
+               value="Weather">
+      The Weather</label><br>
+    <label class="checkboxes">
+        <input
+               type="checkbox"
+               value="view">
+      The Views</label><br>
+    
+     <p>Any other things you'd like to add about your town... </p>
+      <textarea id="comments" name="comment"
+       placeholder="Enter your comment here..."></textarea>
+               
+  <button type="submit" id="submit">Submit</button>            
+     
+    
+  </form>
+  
+  
+  </div>
+  
+</m>
+
+
+@import url('https://fonts.googleapis.com/css?family=Poppins:200i,400&display=swap');
+input:invalid {
+  box-shadow: 0 0 2.5px 0.5px red;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  font-size: 18px;
+  font-weight: 200;
+  line-height: 1.4;
+  color: white;
+  margin: 0;
+   background-image: linear-gradient(
+      115deg,
+      rgba(0, 58, 0, 0.8),
+      rgba(0, 136, 106, 0.7)
+    ),
+    url(https://wallpaperaccess.com/full/126015.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+#submit{
+  margin-top:10px;
+  padding-top:5px;
+  padding-bottom:5px;
+  width:91%;
+  background-color:#37af65; 
+  border-radius: 50px;
+  font-family:'Poppins';
+  color:white;
+ 
+}
+#name{
+  width:90%;
+  border-radius: 3px;
+   margin-bottom:14px;
+}
+#email{
+  width:90%;
+  border-radius: 3px;
+  margin-bottom:15px;
+}
+
+#number{
+  width:90%;
+  border-radius: 3px;
+  margin-bottom:15px;
+}
+
+#survey-box{
+background-color:gainsboro;
+width:40%;
+height:100%;
+margin-left: auto;
+margin-right: auto;
+margin-bottom: 20px;
+padding-bottom:20px;
+background-color:rgb(89, 89, 89, 0.8);
+border-radius: 6px;
+}
+
+#title{
+ text-align:center;
+}
+#description{
+  text-align:center;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.4);
+}
+#dropdown{
+  width:91%;
+  border-radius: 3px;
+   margin-bottom:15px;
+}
+.form-text{
+    text-align:left;
+    padding-top:20px;
+    padding-left:10%;
+   
+}
+.input-radio{
+   margin-bottom:15px;
+}
+
+#comments{
+  width:90%;
+  resize:vertical;
+  min-height:120px;
+
+}
+#name-label{
+  margin-bottom:10px;
+}
