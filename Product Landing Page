@@ -1,4 +1,208 @@
 <main>
-<header id="header"> <img id="header-img" src="https://github.com/TheRealGeb/freeCodeCamp-ResponsiveWebDesigns/blob/main/Geb.png?raw=true"> Geb's Freelancing Services </header>
+<header id="header"> 
   
+  <img id="header-img" src="https://avatars.githubusercontent.com/u/74914441?v=4">
+  <div id="title">Geb's Freelancing Services</div> 
+  
+  <nav id="nav-bar">
+    <a href="#about-text">ABOUT THE SERVICES</a>
+    <a href="#video">EXAMPLE</a>
+    <a href="#box-container" id="packages">PACKAGES </a>
+  </nav>
+</header>
+  <div id="description">For all your creative endeavours!</div>
+  <form id="form" action="https://www.freecodecamp.com/email-submit">
+    <input id="email" type="email" placeholder="Enter your Email">
+    <button type="submit" id="submit">Submit</button> 
+  </form>
+  <div id="about-text"> With 3 years of experience as a graphics designer for multiple enterprises and creating hundreds of visuals for advertising, I can assure you all the delivered products will be of the highest quality.</div>
+  
+  <iframe width="720" height="440"
+src="https://www.youtube.com/embed/W72rFfFjhO0" id="video">
+</iframe>
+  <form id="box-container">
+    <div id="box-1"><div id="text1">Illustration</div> <br> 
+       <button type="submit" class="submit">BUY</button> 
+    </div>
+    
+    <div id="box-2"><div id="text2">Enhancement</div> <br>
+    <button type="submit" class="submit">BUY</button> 
+    </div>
+   
+    <div id="box-3"> <div id="text3">Video</div> <br>
+    <button type="submit" class="submit">BUY</button> 
+  
+  </div>
+  </form>
 </main>
+
+
+
+
+@import url('https://fonts.googleapis.com/css?family=Poppins:200i,400&display=swap');
+
+@media(max-height: 800px){
+  font-size:14px;
+}
+input:invalid {
+  box-shadow: 0 0 2.5px 0.5px red;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  font-size: 18px;
+  font-weight: 200;
+  line-height: 1.4;
+}
+header{
+  width:100%;
+  position:fixed;
+  top:0px;
+  background-color:gainsboro;
+  height: 80px;
+  
+}
+#header-img{
+  height:70px;
+  margin-left:10px;
+  margin-top:5px;
+  
+}
+a:link{
+   display: inline-block;
+   text-decoration: none;
+   cursor: pointer;
+   background-color:rgb(191, 191, 191);
+   padding-top: 40px;
+   padding-bottom:21px;
+   padding-left:40px;
+   padding-right:40px;
+   border:none;
+   text-align: center;
+   margin-left: -5px;
+}
+#nav-bar{
+  float: right;
+  margin-top:-75px;
+  text-decoration: none;
+}
+a:hover, a:active {
+   background-color: rgb(179, 179, 179);
+}
+#title{
+  margin-top:-62px;
+  margin-left: 90px;
+  font-size:35px;
+}
+#description{
+  text-align:center;
+  font-size:35px;
+  font-weight:400px;
+  margin-top:100px;
+  
+}
+
+#email{
+  font-size:20px;
+  text-align:center;
+  margin-top:20px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 20%;
+  height:30px;
+  border-radius:5px;
+}
+#submit{
+  margin-top: 5px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  height:30px;
+  width: 10%;
+  font-size:18px;
+  border-radius: 15px;
+}
+
+#submit{
+   background-image:linear-gradient(125deg,rgb(255, 153, 0), rgb(255, 102, 153),rgb(153, 51, 153) ); 
+  
+}
+#video{
+  margin-left:auto;
+  margin-right:auto;
+  display:block;
+  margin-top:100px;
+}
+#about-text{
+  max-width:40%;
+  justfy-text:center;
+  text-align: center;
+  margin-right:auto;
+  margin-left:auto;
+  display:block;
+  margin-top:50px;
+  font-size:22px;
+}
+#box-container{
+  max-width:70%;
+  margin-left:auto;
+  margin-right:auto;
+  margin-top:70px;
+  display:flex;
+  flex-direction:row;
+  justify-content:center;
+  space-between:30px;
+  text-shadow: 1px 2px 3px rgba(0, 0, 0, 0.6);
+  font-size:35px;
+  color:#ff8533;
+}
+#box-1{
+  background-color:rgb(191, 191, 191);
+  height:300px;
+  width:250px;
+  margin: 10px;
+  text-align:center;
+ 
+  background-image:url(https://github.com/TheRealGeb/freeCodeCamp-ResponsiveWebDesigns/blob/main/Untitled-2.png?raw=true);
+  background-size:250px;
+}
+#box-2{
+  background-color:rgb(191, 191, 191);
+  height:300px;
+  width:250px; 
+  margin: 10px;
+  text-align:center;
+
+  background-image:url(https://github.com/TheRealGeb/freeCodeCamp-ResponsiveWebDesigns/blob/main/Fiverr3.png?raw=true);
+  background-size:250px;
+}
+
+#box-3{
+  background-color:rgb(191, 191, 191);
+  height:300px;
+  width:250px;
+  margin: 10px;
+  text-align:center;
+  
+  background-image: url(https://i.ytimg.com/an_webp/W72rFfFjhO0/mqdefault_6s.webp?du=3000&sqp=COS_iIMG&rs=AOn4CLBPxwELBHSYo8UDMSfstY3Hr3HUlw);
+  backround-size:250px;
+}
+.submit{
+  background-image:linear-gradient(125deg,rgb(255, 153, 0), rgb(255, 102, 153),rgb(153, 51, 153) ); 
+  margin-top:265px;
+  width:200px;
+  height:30px;
+  font-size:25px;
+  color:white;
+  text-align:center;
+}
+#text1{
+  margin-top:-50px;
+}
+#text2{
+  margin-top:-50px;
+}
+#text3{
+  margin-top:-50px;
+}
