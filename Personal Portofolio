@@ -1,8 +1,312 @@
+<link
+  href="https://fonts.googleapis.com/css?family=Raleway:700&display=swap"
+  rel="stylesheet"
+/>
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+
+
+<script src="https://kit.fontawesome.com/9e4c3a8132.js" crossorigin="anonymous"></script>
+
+<main>
+<nav id="navbar" class="nav">
+<ul class="nav-list">
+  <li><a href="#welcome-section">About</a></li>
+  <li><a href="#projects">Projects</a></li>
+  <li><a href="#contact">Contact</a></li>
+  
+</ul>
+
+
+</nav>
+
 <section id="welcome-section"> 
   <h1>Hey, I am Stefan G.</h1>
+  <p><i>a programmer, web and graphics designer</i></p>
 </section>
 
 <section id="projects">
-  <h1> Here are some of my projects</h1
-  <div class="project-tile"> <div>
+  <h1 id="project-desc"> These are some of my projects</h1>
+  <div class="project-grid">
+  <a href="https://codepen.io/therealgeb/full/YzpBYWO" target="_blank"  class="project-tile">
+    <img class="project-image" src="https://github.com/TheRealGeb/freeCodeCamp-ResponsiveWebDesigns/blob/main/Tributepng.png?raw=true" alt="tribute-project"/>
+    <p class="project-title">
+      <span class="code">&lt;</span>
+        Tribute Page
+      <span class="code">&#47;&gt;</span>
+    </p>
+    </a>
+    
+    <a href="https://codepen.io/therealgeb/full/eYgzrZX" target="_blank" class="project-tile">
+      <img class="project-image" src="https://github.com/TheRealGeb/freeCodeCamp-ResponsiveWebDesigns/blob/main/jsdocumentation.png?raw=true" alt="technical-documentation-project"/>
+      <p class="project-title">
+       <span class="code">&lt;</span> Technical Documentation Page
+        <span class="code">&#47;&gt;</span>
+      </p>
+    </a>
+  
+  
+  
+  </div>
+  
 </section>
+
+<section id="contact" class="contact-section">
+  <h1> Let's work together.. </h1>
+  <p><i> How do you take your coffee?</i></p>
+  
+  <div class="contact-links">
+   <a
+      id="profile-link"
+      href="https://github.com/TheRealGeb"
+      target="_blank"
+      class="btn contact-details"
+      ><i class='fab fa-github'></i><span> GitHub</span></a>
+    <a
+      id="profile-link"
+      href="https://codepen.io/therealgeb"
+      target="_blank"
+      class="btn contact-details"
+      ><i class="fab fa-codepen"></i><span> Codepen</span></a>
+    <a
+      id="profile-link"
+      href="https://www.linkedin.com/in/stefan-gebri/"
+      target="_blank"
+      class="btn contact-details"
+       ><i class="fab fa-linkedin-in"></i><span> LinkedIn</span></a>
+    <a
+      id="profile-link"
+      href="https://www.freecodecamp.org/therealgeb"
+      target="_blank"
+      class="btn contact-details"
+       ><i class="fab fa-free-code-camp"></i><span id="freeCC">freeCodeCamp</span></a>
+    <a
+      id="profile-link"
+      href="mailto:stefangebri@gmail.com"
+      target="_blank"
+      class="btn contact-details"
+      ><i class="fas fa-at"></i><span>Send a mail</span></a>
+  
+    
+    
+    
+    
+  </div>
+  
+</section>
+  
+  
+</main>
+
+
+
+
+
+:root {
+  --main-white: #eaeaea;
+  --main-red: #ff2e63;
+  --main-blue: #45567d;
+  --main-gray: #252a34;
+}
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@media(max-height: 800px){
+  font-size:14px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+  overflow-y: auto;
+  scroll-behaviour:smooth;
+}
+
+.nav{
+  display:flex;
+  justify-content:flex-end;
+  position:fixed;
+  width:100%;
+  background-image: linear-gradient(to right, rgba(365,20,63,1), rgba(365,20,63,1),rgba(365,20,63,1));;
+  z-index: 10;
+}
+
+.nav-list{
+   margin-right: 2rem;
+   display: flex;
+  
+}
+.nav-list a {
+  display: block;
+  font-size: 2rem;
+  padding: 2rem;
+  text-decoration: none;
+  color: var(--main-white);
+  font-family:"Bebas Neue";
+  font-weight: 900;
+  font-size: 40px;
+}
+.nav-list a:hover{
+  background-color:var(--main-blue);
+  
+}
+
+#welcome-section h1{
+  
+  display:block;
+  text-align:center;
+  margin-top:50vh;
+  color: var(--main-white);
+  font-family:'Raleway';
+  font-size:50px;
+  
+}
+#contact h1{
+  display:block;
+  text-align:center;
+  color: var(--main-white);
+  font-family:'Raleway';
+  font-size:60px;
+  padding-top: 64px;
+}
+p{
+  color: var(--main-red);
+  text-align:center;
+  display:block;
+  margin-top:5vh;
+  font-family: 'Poppins';
+  font-weight: 500;
+  font-size: 22px;
+}
+
+#welcome-section{
+  background-color:gainsboro;
+  width: 100vw;
+  height: 100vh;
+  background-color: #000;
+  background-image: linear-gradient(to bottom right, rgba(0,0,195,0.4),rgba(0,00,15,0.95),rgba(0,0,15,0.95),rgba(05,00,35,0.4)), url(https://www.uri.edu/wp-content/uploads/home/2018/09/designing-sea-and-stars-backdrop-sky.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  
+}
+#projects{
+  background-color: var(--main-blue);
+  color:white;
+  font-family:'Poppins';
+  text-align:center;
+  padding: 6rem 2rem;
+}
+#project-desc{
+  margin-top:20px;
+  font-size:40px;
+  font-weight:600;
+  border-bottom: 2px solid currentColor;
+  display:block;
+  max-width:650px;
+  margin-right:auto;
+  margin-left:auto;
+  
+}
+
+
+.project-grid{
+  padding-top:40px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  grid-gap: 48px;
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+  margin-bottom: 3rem;
+  text-decorations:none;
+  
+}
+.project-tile{
+  background-color:var(--main-gray);
+  overflow: hidden;
+  
+}
+.project-title{
+   text-decoration: none;
+   margin-top:24px;
+   font-size:28px;
+   color: var(--main-white);
+   text-align: center;
+}
+.project-image{
+  height: calc(100% - 6.8rem);
+  width: 100%;
+  object-fit: cover;
+}
+.code {
+  color: var(--main-gray);
+  transition: color 0.3s ease-out;
+}
+
+.project-tile:hover .code{
+  color: #ff7f50;
+}
+
+a{
+  text-decoration:none;
+  
+}
+#contact{
+  background-color: var(--main-gray);
+  color: var(--main-white);
+}
+#contact p{
+  color: var(--main-white);
+  font-weight: 100;
+  margin-top:10px;
+  margin-bottom:35px;
+}
+
+
+#profile-link{
+  color:var(--main-white);
+  font-size:40px;
+}
+
+.contact-section
+{
+  margin-right:auto;
+  margin-left:auto;
+}
+
+.contact-links {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+  max-width: 1080px;
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+  margin-right: auto;
+  margin-left: auto;
+  height:4rem;
+  overflow-y:hidden;
+}
+
+.contact-details {
+  font-family:'Poppins';
+  font-size: 24px;
+  text-shadow: 2px 2px 1px #1f1f1f;
+  transition: transform 0.3s ease-out;
+}
+
+.contact-details:hover {
+  transform: translateY(8px);
+}
+#profile-link span{
+  display: inline-block;
+  vertical-align: middle;
+  margin-bottom:10px;
+  margin-left: 4px;
+  overflow: hidden;
+}
+#profile-link{
+  overflow:hidden;
+  font-size:30px;
+}
